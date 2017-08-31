@@ -3,6 +3,7 @@ import bases.GameObject;
 import bases.inputs.InputManager;
 import bases.scenes.SceneManager;
 import bases.settings.Settings;
+import papers.Player;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -30,7 +31,14 @@ public class GameWindow extends Frame {
         pack();
         setupGameLoop();
         setupWindow();
-        setupLevel();
+        //setupLevel();
+        setupPlayers();
+    }
+
+    private void setupPlayers() {
+        Player player = new Player();
+        player.getPosition().set(300,300);
+        GameObject.add(player);
     }
 
     private void setupLevel() {
