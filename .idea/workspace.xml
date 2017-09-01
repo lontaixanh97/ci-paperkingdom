@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61d9cb44-677d-415e-bfdb-5ed306b14918" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/papers/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ci-platformer-begin/misc.xml" afterPath="$PROJECT_DIR$/out/production/ci-platformer-begin/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ci-platformer-begin/workspace.xml" afterPath="$PROJECT_DIR$/out/production/ci-platformer-begin/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Program.java" afterPath="$PROJECT_DIR$/src/Program.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/inputs/InputManager.java" afterPath="$PROJECT_DIR$/src/bases/inputs/InputManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/physics/BoxCollider.java" afterPath="$PROJECT_DIR$/src/bases/physics/BoxCollider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/physics/Physics.java" afterPath="$PROJECT_DIR$/src/bases/physics/Physics.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/renderers/ImageRenderer.java" afterPath="$PROJECT_DIR$/src/bases/renderers/ImageRenderer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/papers/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+            <state relative-caret-position="425">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,16 +48,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageRenderer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ImageRenderer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bases/renderers/ImageRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+            <state relative-caret-position="278">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#2526#2527#0" expanded="true" />
-                <element signature="e#2594#2595#0" expanded="true" />
+                <element signature="e#2694#2695#0" expanded="true" />
+                <element signature="e#2762#2763#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,8 +118,8 @@
         <option value="$PROJECT_DIR$/src/game/Player.java" />
         <option value="$PROJECT_DIR$/src/GameWindow.java" />
         <option value="$PROJECT_DIR$/src/bases/inputs/InputManager.java" />
-        <option value="$PROJECT_DIR$/src/bases/renderers/ImageRenderer.java" />
         <option value="$PROJECT_DIR$/src/papers/Player.java" />
+        <option value="$PROJECT_DIR$/src/bases/renderers/ImageRenderer.java" />
       </list>
     </option>
   </component>
@@ -746,25 +734,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/renderers/ImageRenderer.java">
+    <entry file="file://$PROJECT_DIR$/src/papers/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        <state relative-caret-position="425">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#2526#2527#0" expanded="true" />
-            <element signature="e#2594#2595#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/papers/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/bases/renderers/ImageRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        <state relative-caret-position="278">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2694#2695#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
           </folding>
         </state>
       </provider>

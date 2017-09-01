@@ -14,6 +14,7 @@ public class ImageRenderer implements Renderer {
     public BufferedImage image;
     public BufferedImage defaultImage;
     private Vector2D anchor;
+    private BufferedImage rotatedImage;
 
 
     public ImageRenderer(BufferedImage image) {
@@ -25,11 +26,15 @@ public class ImageRenderer implements Renderer {
         this.anchor = new Vector2D(0.5f, 0.5f);
         this.image = scale(image, dWidth, dHeight);
         this.defaultImage = this.image;
-        this.image = rotate(this.image, Math.toRadians(degree));
+        rotatedImage = rotate(this.image, Math.toRadians(degree));
+        this.image = null;
+        this.image = rotatedImage;
     }
 
     public void rotate(float degree){
-        this.image = rotate(this.defaultImage, Math.toRadians(degree));
+        rotatedImage = rotate(this.defaultImage, Math.toRadians(degree));
+        this.image = null;
+        this.image = rotatedImage;
     }
 
     public BufferedImage scale(BufferedImage imageToScale, int dWidth, int dHeight) {
