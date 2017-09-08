@@ -3,22 +3,29 @@ package papers;
 import bases.GameObject;
 import bases.Vector2D;
 import bases.inputs.InputManager;
+import bases.physics.BoxCollider;
+import bases.physics.PhysicsBody;
 import bases.renderers.ImageRenderer;
 
-public class Player extends GameObject{
+import java.awt.*;
+import java.awt.image.BufferedImage;
+
+public class Player extends GameObject implements PhysicsBody {
     private static final float SPEED = 5;
     private static final float ANGULARSPEED = 1;
     private Vector2D velocity;
     private float angularSpeed;
-    private float angle;
     private ImageRenderer imageRenderer;
+    private BoxCollider boxCollider;
 
     public Player() {
         super();
-        imageRenderer = ImageRenderer.create("assets/images/yellow_square.jpg", 70, 100, 60);
+        imageRenderer = ImageRenderer.create("assets/images/yellow_square.jpg");
         this.renderer = imageRenderer;
         this.velocity = new Vector2D();
-        angle = 0;
+
+        boxCollider = new BoxCollider(70,100);
+        this.children.add(boxCollider);
     }
 
     @Override
@@ -36,9 +43,9 @@ public class Player extends GameObject{
         if (InputManager.instance.dPressed){
             angularSpeed += ANGULARSPEED;
         }
-        angle += angularSpeed;
-        imageRenderer.rotate(angle);
     }
+    
+
 
     private void move() {
         velocity.set(0,0);
@@ -56,5 +63,10 @@ public class Player extends GameObject{
         }
         this.position.addUp(velocity);
         //screenPosition.addUp(velocity);
+    }
+
+    @Override
+    public BoxCollider getBoxCollider() {
+        return this.boxCollider ;
     }
 }

@@ -2,7 +2,11 @@
 import bases.GameObject;
 import bases.inputs.InputManager;
 import bases.scenes.SceneManager;
+import bases.scenes.gameOver.GameOver;
+import bases.scenes.intros.IntroScene;
+
 import bases.settings.Settings;
+import maps.Map;
 import papers.Player;
 
 import java.awt.*;
@@ -31,18 +35,17 @@ public class GameWindow extends Frame {
         pack();
         setupGameLoop();
         setupWindow();
-        //setupLevel();
-        setupPlayers();
+        setupLevel();
+
     }
 
-    private void setupPlayers() {
-        Player player = new Player();
-        player.getPosition().set(300,300);
-        GameObject.add(player);
-    }
+
+
+
+
 
     private void setupLevel() {
-
+        SceneManager.changeScene(new GameOver());
     }
 
     private void setupGameLoop() {
@@ -89,7 +92,6 @@ public class GameWindow extends Frame {
 
         Settings.instance.setWindowInsets(this.getInsets());
     }
-
     public void loop() {
         while(true) {
             if (lastTimeUpdate == -1) {
@@ -117,4 +119,5 @@ public class GameWindow extends Frame {
         GameObject.renderAll(backbufferGraphics);
         getGraphics().drawImage(backbufferImage, 0, 0, null);
     }
+
 }

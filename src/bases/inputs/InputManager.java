@@ -12,6 +12,7 @@ public class InputManager {
     public boolean downPressed;
     public boolean leftPressed;
     public boolean rightPressed;
+    public boolean enterPressed;
     public boolean xPressed;
 
     public boolean aPressed;
@@ -46,6 +47,9 @@ public class InputManager {
             case VK_D:
                 dPressed = true;
                 break;
+            case VK_ENTER:
+                enterPressed = true;
+                break;
         }
     }
 
@@ -71,6 +75,9 @@ public class InputManager {
                 break;
             case VK_D:
                 dPressed = false;
+                break;
+            case VK_ENTER:
+                enterPressed = false;
                 break;
         }
     }

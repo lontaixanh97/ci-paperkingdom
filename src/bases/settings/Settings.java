@@ -34,7 +34,7 @@ public class Settings {
     public int getGamePlayWidth() {
         return gamePlayWidth;
     }
-
+    
     public int getGamePlayHeight() {
         return gamePlayHeight;
     }
@@ -48,6 +48,6 @@ public class Settings {
     }
 
     private Settings() {
-        this(1024, 768, 384, 768);
-    }
+        this(736, 414, 736, 414);
+    } 
 }

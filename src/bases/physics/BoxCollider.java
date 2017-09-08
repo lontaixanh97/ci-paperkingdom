@@ -11,6 +11,7 @@ import javax.swing.*;
 public class BoxCollider extends GameObject {
     private float width;
     private float height;
+    private double angle;
 
     public BoxCollider(float x, float y, float width, float height) {
         super();
@@ -22,6 +23,9 @@ public class BoxCollider extends GameObject {
     public BoxCollider(float width, float height) {
         this(0, 0, width, height);
     }
+
+
+
 
     public float left() {
         return this.screenPosition.x - this.width / 2;
@@ -73,4 +77,5 @@ public class BoxCollider extends GameObject {
     public float getHeight() {
         return height;
     }
+
 }
